@@ -1,0 +1,526 @@
+/* Global Styles */
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+header {
+  background-color: #ffcc80;
+  padding: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Checkbox for toggling menu */
+.menu-toggle {
+  display: none; /* Hide the checkbox */
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin-left: 20px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.nav-list li a:hover {
+  color: #ff6f61;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+  .nav-list {
+      display: none; /* Hide the menu by default */
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      background-color: #ffcc80;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      width: 150px; /* Set width for mobile dropdown */
+  }
+
+  .nav-list li {
+      margin-bottom: 10px;
+  }
+
+  .menu-icon {
+      display: block; /* Show menu icon on mobile */
+  }
+
+  /* Show the menu when the checkbox is checked */
+  #menu-toggle:checked + .menu-icon + .nav-list {
+      display: flex;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list li {
+  margin-left: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://i.pinimg.com/474x/9a/87/b3/9a87b30e64d3b1f306da2a3294d6eb2e.jpg') no-repeat center center/cover;
+  height: 80vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+.search-box {
+  margin-top: 20px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #e64a19;
+}
+
+/* Recipe Section */
+.recipes {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.recipes h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.recipe-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.recipe-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.recipe-card h2 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #ff6f61;
+}
+
+.recipe-card p {
+  margin: 10px 0;
+  color: #666;
+}
+
+.recipe-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.recipe-card a:hover {
+  background-color: #e64a19;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #ffcc80;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #e64a19;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-list {
+      display: none;
+  }
+
+  .menu-icon {
+      display: block;
+      color: #fff;
+  }
+
+  .hero h2 {
+      font-size: 2.5rem;
+  }
+
+  .hero p {
+      font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
+      font-size: 2rem;
+  }
+
+  .hero p {
+      font-size: 1rem;
+  }
+
+  .search-box input {
+      width: 200px;
+  }
+
+  .recipes h1 {
+      font-size: 2rem;
+  }
+
+  .recipe-card h2 {
+      font-size: 1.2rem;
+  }
+
+  .recipe-card p {
+      font-size: 0.9rem;
+  }
+}
+
+.hero1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.food-item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  max-width: 300px; /* Set a max width for each item */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.food-item:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.food-item img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.food-description {
+  padding: 15px;
+}
+
+.food-description h2 {
+  color: #e45644; /* Green color for headings */
+  margin: 0 0 10px; /* Add some margin to the heading */
+}
+
+.food-description p {
+  color: #555; /* Dark grey color for text */
+  line-height: 1.5; /* Improve readability */
+}
+
+/* General Section Styling */
+.service-section {
+  background-color: #ffffff; /* White background for each section */
+  padding: 40px 20px;        /* Padding around the content */
+  margin: 20px 0;            /* Space between each section */
+  border-radius: 10px;       /* Smooth corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  text-align: center;        /* Center-align text */
+}
+
+/* Section Heading Styling */
+.service-section h2 {
+  font-size: 32px;           /* Larger font size for the section headings */
+  color: #e0520f;            /* Primary color for headings (blue) */
+  margin-bottom: 20px;       /* Space below the heading */
+}
+
+/* Section Paragraph Styling */
+.service-section p {
+  font-size: 18px;           /* Medium font size for the description */
+  color: #555;               /* Dark gray for text readability */
+  margin-bottom: 30px;       /* Space below the paragraph */
+  line-height: 1.6;          /* Space between lines for better readability */
+}
+
+/* Button Styling */
+.service-btn {
+  display: inline-block;      /* Inline-block for the button to take padding */
+  padding: 12px 25px;         /* Padding inside the button */
+  font-size: 16px;            /* Button text size */
+  background-color: #d6581d;  /* Blue background for the button */
+  color: white;               /* White text */
+  border-radius: 5px;         /* Rounded button corners */
+  transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.service-btn:hover {
+  background-color: #ad4728;  /* Darker blue when hovering */
+}
+
+/* Responsive Adjustments for Small Screens */
+@media (max-width: 768px) {
+  .service-section {
+      padding: 30px 15px;     /* Adjust padding for smaller screens */
+  }
+
+  .service-section h2 {
+      font-size: 28px;        /* Adjust heading size for smaller screens */
+  }
+
+  .service-section p {
+      font-size: 16px;        /* Adjust paragraph size for smaller screens */
+  }
+
+  .service-btn {
+      padding: 10px 20px;     /* Adjust button padding */
+      font-size: 15px;        /* Slightly smaller button text */
+  }
+}
+
+
+/* Contact Section Styles */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+/* Contact Form */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 20px;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.contact-form button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Business Info Styles */
+.business-info {
+  flex: 1;
+  min-width: 300px;
+  margin-left: 20px;
+  text-align: center;
+}
+.business-info p {
+  margin: 10px 0;
+}
+.business-info .map {
+  width: 100%;
+  height: 200px;
+  background-image: url('map-placeholder.jpg'); /* Placeholder map image */
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* Social Links Styles */
+.social-links {
+  margin-top: 20px;
+}
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media(max-width: 768px) {
+  .contact-section {
+      flex-direction: column;
+  }
+  .contact-form, .business-info {
+      margin: 0;
+      margin-bottom: 20px;
+  }
+}

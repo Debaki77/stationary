@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+        <h1 class="logo">Delicious Recipe,</h1>
+        <nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+
+        <section class="contact-section">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form method="POST" action="#">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <!-- Business Information -->
+            <div class="business-info">
+                <h2>Contact Information</h2>
+                <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+                <p>Email: <a href="mailto:info@yourbusiness.com">info@yourbusiness.com</a></p>
+                <p>Address: 123 Main St, Your City, Your Country</p>
+                <p>Operating Hours: Mon-Fri, 9:00 AM - 5:00 PM</p>
+
+                <!-- Google Map Image (Static) -->
+                <div class="map"></div>
+
+                <!-- Social Media Links -->
+                <div class="social-links">
+                    <p>Follow us on:</p>
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+      <div>
+          <p>&copy; 2024 delicious Recipes</p>
+      </div>
+  </footer>
+</body>
+</html>
